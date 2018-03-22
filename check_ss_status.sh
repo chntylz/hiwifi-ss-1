@@ -1,3 +1,12 @@
+
+#完美解决掉线问题（未运行 未加速）
+#脚本中 ss-local   dns2socks  ss_redir 三个进程 ， ps查看自己的极路由中是哪三个，各个版本中似乎有点不一样
+#参考操作
+#1. cp  check_ss_status.sh  /etc/init.d/
+#2. chmod +x /etc/init.d/check_ss_status.sh
+#3. rc.local 中   执行  check_ss_status.sh
+############################################################################
+
 #!/bin/sh
 
 name='ss-local'
